@@ -1,0 +1,75 @@
+/*******************
+  DESIGN INFO
+
+  Fauna One font weights:
+
+  Playfair Display font weights:
+  - Regular = 400
+  - Bold = 700
+  - Black = 900
+
+  Colours:
+
+*******************/
+
+
+
+/*******************
+  BASE SETUP
+*******************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*******************
+  FONT SETUP
+*******************/
+
+body {
+  font-family: 'Fauna One', serif;
+  letter-spacing: .3px; 
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.286em;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.429em;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.143em;
+}
+
+
+h5 {
+  font-family: 'Muli', sans-serif;
+}
+
+
+/*******************
+  FONT SETUP
+*******************/
+
+html {
+  font-size: 14px;
+  line-height: 23px;
+}
