@@ -1,50 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="Sasha Ward work">
     <title>Sasha Ward work</title>
+
+    <!-- external fontawesome link -->
+    <script src="https://use.fontawesome.com/88fabf230b.js"></script>
+
+    <!-- external font links -->
     <link href="https://fonts.googleapis.com/css?family=Muli:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+
+    <!-- internal css links -->
     <link rel="stylesheet" href="./css/normalise.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <div>
-          <p>Sasha Ward</p>
-          <p>Product | UX Designer</p>
-        </div>
-        <li><a href="index.html">About me</a></li>
-        <li><a href="work.html">My work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div class="container clearfix">
+        <nav>
+          <div class="logo">
+            <a href="index.html"><img src="./images/logo.svg" alt="sasha logo"></a>
+          </div>
+
+          <div class="menuLabel">
+            <p class="label">Menu</p>
+            <i id="hamburger" class="fa fa-bars fa-1x js-toggle-menu" aria-hidden="true"></i>
+          </div>
+
+          <div id="sidenav" class="sidenav">
+            <ul class="menu items">
+              <span class="closebtn js-toggle-menu">close</span>
+              <li><a href="index.html">About me</a></li>
+              <li><a href="work.html">My work</a></li>
+              <li><a href="https://medium.com/@SashaBWard_1992">Writings</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <section>
-      <h1>How I approach things</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <!-- need to think about the content that will go here -->
+      <div class="centreContainer heading">
+        <h1>How I do things</h1>
+        <div class="linebreak orange"></div>
+      </div>
+
+      <div class="process">
+        <h5>Identify what the problem is.  Get everyone on board.  Prototype.  Get it wrong.  Get it less wrong. Keep testing it. Do it all over again.</h5>
+      </div>
     </section>
 
-    <section>
-      <h2>What I find interesting</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <!-- need to think about the content that will go here -->
-    </section>
+    <section class="centreContainer heading skills">
+      <h2>My expertise</h2>
+      <div class="linebreak orange"></div>
+      <div class="expertise">
+        <h3 class="margin1">Defining the problem</h3>
+        <p class="margin2">Identify what the <ins class="orange2">real</ins> problem is by running experiments to prove or disprove early assumptions.</p>
 
-    <section>
-      <h3>Some projects I've worked on</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <!-- need to think about the content that will go here -->
+        <h3 class="margin1">Facilitating &amp; Iterating </h3>
+        <p class="margin2">Orchestrate productive conversations between people of different disciplines and backgrounds in order to rapidly generate a range of ideas.</p>
+
+        <h3 class="margin1">Sketching &amp; Prototyping</h3>
+        <p class="margin2">Visualise solutions by using a range of low and high fidelity methods, whatever's necessary for the job.</p>
+
+        <h3 class="margin1">Testing &amp; Adapting</h3>
+        <p class="margin2">Getting out of the building and testing designs on <ins class="orange2">real</ins> people. Continually injecting the feedback into the design.</p>
+
+        <h3 class="margin1">Delivering</h3>
+        <p class="margin2">Pairing with developers in order to communicate and share why the design is the way it is and how it should function. Because this is what actually <ins class="orange2">matters</ins>.</p>
+      </div>
     </section>
 
     <footer>
-      <!-- Think about what I want in the footer -->
+      <p class="declaration">Built by me. Made in London</p>
+      <p class="smallprint">Copyright (c) 2017 Copyright Sasha Ward.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./js/index.js"></script>
 
   </body>
 </html>

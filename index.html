@@ -1,42 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="Sasha Ward Portfolio">
     <title>Sasha Ward portfolio</title>
+
+    <!-- external fontawesome link -->
+    <script src="https://use.fontawesome.com/88fabf230b.js"></script>
+
+    <!-- external font links -->
     <link href="https://fonts.googleapis.com/css?family=Muli:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+
+    <!-- internal css links -->
     <link rel="stylesheet" href="./css/normalise.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <div>
-          <p>Sasha Ward</p>
-          <p>Product | UX Designer</p>
-        </div>
-        <li><a href="index.html">About me</a></li>
-        <li><a href="work.html">My work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div class="container clearfix">
+        <nav>
+          <div class="logo">
+            <a href="index.html"><img src="./images/logo.svg" alt="sasha logo"></a>
+          </div>
 
-    <section>
-      <h1>A bit about me</h1>
-      <blockquote>Some kind of tageline will go here</blockquote>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="#" alt="Picture of Sasha">
+          <div class="menuLabel">
+            <p class="label">Menu</p>
+            <i id="hamburger" class="fa fa-bars fa-1x js-toggle-menu" aria-hidden="true"></i>
+          </div>
+
+          <div id="sidenav" class="sidenav">
+            <ul class="menu items">
+              <span class="closebtn js-toggle-menu">close</span>
+              <li><a href="index.html">About me</a></li>
+              <li><a href="work.html">My work</a></li>
+              <li><a href="https://medium.com/@SashaBWard_1992">Writings</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="centreContainer heading clearfix">
+      <div>
+        <h1>A bit about me</h1>
+        <div class="linebreak blue"></div>
+      </div>
+
+      <div class="hero">
+        <div class="intro">
+          <h2>User Experience &amp; Product Designer </h2>
+          <p>I help make products. I'm a delivery focussed product design designer who helps software delivery teams work with a product mindset and focus on delivering validated and useful products to real people.</p>
+          <p>I create things of <ins class="margin2">substance</ins>.</p>
+        </div>
+
+        <img class="profile" src="./images/profile-picture.png" alt="Picture of Sasha">
+      </div>
     </section>
-    <section>
-      <h2>Things I'm up to</h2>
-      <!-- HTML Table to go here -->
+
+
+    <section class="centreContainer table heading">
+    <table>
+      <tbody>
+        <tr class="clearfix">
+          <td>
+            <p>learning to</p>
+            <h3>Code</h3>
+          </td>
+          <td>
+            <p>currently reading</p>
+            <h3>Sprint - Jake Knapp &amp; Braden Kowitz</h3>
+          </td>
+          <td>
+            <p>working on</p>
+            <h3>Banking stuff</h3>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     </section>
+
     <footer>
-      <!-- Think about what I want in the footer -->
+      <p class="declaration">Built by me. Made in London</p>
+      <p class="smallprint">Copyright (c) 2017 Copyright Sasha Ward.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./js/index.js"></script>
 
   </body>
 </html>

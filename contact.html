@@ -1,42 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="Sasha Ward contact">
     <title>Sasha Ward contact</title>
+
+    <!-- external fontawesome link -->
+    <script src="https://use.fontawesome.com/88fabf230b.js"></script>
+
+    <!-- external font links -->
     <link href="https://fonts.googleapis.com/css?family=Muli:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+
+    <!-- internal css links -->
     <link rel="stylesheet" href="./css/normalise.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <div>
-          <p>Sasha Ward</p>
-          <p>Product | UX Designer</p>
-        </div>
-        <li><a href="index.html">About me</a></li>
-        <li><a href="work.html">My work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div class="container clearfix">
+        <nav>
+          <div class="logo">
+            <a href="index.html"><img src="./images/logo.svg" alt="sasha logo" class="sasha"></a>
+          </div>
 
-    <section>
-      <h1>I’m a human not a computer</h1>
-      <p>+44(0)7788 150 200</p>
-      <p>or email me</p>
-      <a href="#">sashabward@gmail.com</a>
+          <div class="menuLabel">
+            <p class="label">Menu</p>
+            <i id="hamburger" class="fa fa-bars fa-1x js-toggle-menu" aria-hidden="true"></i>
+          </div>
+
+          <div id="sidenav" class="sidenav">
+            <ul class="menu items">
+              <span class="closebtn js-toggle-menu">close</span>
+              <li><a href="index.html">About me</a></li>
+              <li><a href="work.html">My work</a></li>
+              <li><a href="https://medium.com/@SashaBWard_1992">Writings</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="clearfix">
+      <div class="centreContainer heading">
+        <h1>I’m a human not a computer</h1>
+        <div class="linebreak slate"></div>
+      </div>
+
+      <div class="contact">
+        <i class="fa fa-phone fa-5x" aria-hidden="true"></i>
+        <a href="tel:07788150200" class="call">+44(0)7788 150 200</a>
+
+        <div class="moreinfo">
+          <p>So give me a call…</p>
+          <p>or reach me on</p>
+          <a href="#">sashabward@gmail.com</a>
+
+        <div class="social">
+          <ul class="socialProfiles clearfix">
+            <li>
+              <a href="https://www.linkedin.com/in/sashabward/" class="item"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/sashabward" class="item"><i class="icon fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sashabward/" class="item"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/sashaward" class="item"><i class="icon fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UC07srgXPLQECt4VMWhI7A6g" class="item"><i class="icon fa fa-youtube-play" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="mapRight">
+        <div id="map"></div>
+      </div>
     </section>
-    <section>
-      <h2>This is where you'll find me</h2>
-      <!-- google map API of Red Badger office -->
+
+    <section class="centreContainer clearfix">
+      <div class="find">
+        <h2>This is where you'll find me</h2>
+        <div class="linebreak slate"></div>
+      </div>
+
+      <div class="address">
+        <p>12 Mallow St,</p>
+        <p>London,</p>
+        <p>EC1Y 8RQ,</p>
+        <p>UK</p>
+      </div>
+
+      <div class="openmaps">
+        <a href="https://www.google.co.uk/maps/place/Red+Badger+Consulting+Limited/@51.52477,-0.0908016,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca8b1ceac59:0x4c36c94db3efa868!8m2!3d51.52477!4d-0.0886129">Open in Google maps</a>
+      </div>
     </section>
+
     <footer>
-      <!-- Think about what I want in the footer -->
+      <p class="declaration">Built by me. Made in London</p>
+      <p class="smallprint">Copyright (c) 2017 Copyright Sasha Ward.</p>
     </footer>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz6dHgbW_FmxJdgtBKSQcYh367vkqLyJ4&callback=initMap">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./js/index.js"></script>
 
   </body>
 </html>
