@@ -331,6 +331,10 @@ blockquote {
   color: #fff;
 }
 
+.bold {
+  font-weight: 900;
+}
+
 .contact a {
   color: #fff;
 }
