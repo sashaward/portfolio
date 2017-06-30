@@ -25,7 +25,6 @@
 /*Design notes:*/
 /*need to change the colour of the white backgroud to an off white*/
 /*make footer white*/
-/*add link to my medium? called writings*/
 
 
 /*******************
@@ -102,15 +101,21 @@ h5 {
 }
 
 .slate {
-  background-color: #7ABBA7;
+  background: -webkit-linear-gradient(top left, #61B395, #649281);
+  background: linear-gradient(top left, #61B395, #649281);
 }
+
 
 .blue {
-  background-color: #75BCCA;
+  background: -webkit-linear-gradient(top left, #75BCCA , #48536C);
+  background: linear-gradient(top left, #75BCCA , #48536C);
 }
 
+
+
 .orange {
-  background-color: #F1815B;
+  background: -webkit-linear-gradient(top left, #f56262 , #F7806A);
+  background: linear-gradient(top left, #f56262 , #F7806A);
 }
 
 .heading {
@@ -171,7 +176,8 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #75BCCA;
+  background: -webkit-linear-gradient(top left, #95e1d3 , #eaffd0);
+  background: linear-gradient(top left, #95e1d3 , #eaffd0);
   overflow-x: hidden;
   padding-top: 80px;
   transition: 0.5s;
@@ -253,7 +259,8 @@ ins {
 ins:before {
   content: "";
   height: 2px;
-  background-color: #75BCCA;
+  background: -webkit-linear-gradient(top left, #75BCCA , #48536C);
+  background: linear-gradient(top left, #75BCCA , #48536C);
   width: 100%;
   position: absolute;
   bottom: -2px;
@@ -261,7 +268,8 @@ ins:before {
 }
 
 .orange2::before {
-  background-color: #F1815B;
+  background: -webkit-linear-gradient(top left, #f56262 , #F7806A);
+  background: linear-gradient(top left, #f56262 , #F7806A);
 }
 
 .profile {
@@ -291,7 +299,7 @@ table {
 td {
   display: block;
   padding: 20px;
-  border: 1.8px solid #C2C2C2;
+  border: 1.2px solid #d3d3d3;
 }
 
 td:nth-child(2n) {
@@ -305,17 +313,14 @@ border-top: none;
 *******************/
 
 .process {
-  background-color: #F1815B;
+  background: -webkit-linear-gradient(top left, #f56262 , #F7806A);
+  background: linear-gradient(top left, #f56262 , #F7806A);
   width: 100%;
   padding: 2em 1em;
   color: #fff;
 }
 
-blockquote {
-  margin: 0;
-  padding: 2em;
-  color: #F1815B;
-}
+
 
 
 /*******************
@@ -323,7 +328,8 @@ blockquote {
 *******************/
 
 .contact {
-  background-color: #7ABBA7;
+  background: -webkit-linear-gradient(top left, #61B395, #649281);
+  background: linear-gradient(top left, #61B395, #649281);
   padding: 2em 1em;
 }
 
@@ -558,6 +564,11 @@ footer p {
     padding: 2em 1.5em 1.5em 1.5em;
   }
 
+  img {
+    width: 130px;
+    margin-top: 4px;
+  }
+
   nav ul {
     float: right;
     margin-top: 0;
@@ -599,7 +610,9 @@ footer p {
     width: 100%;
     bottom: -12px;
     left: 0;
-    background-color: #75BCCA;
+    background: -webkit-linear-gradient(top left, #75BCCA , #48536C);
+    background: linear-gradient(top left, #75BCCA , #48536C);
+    /*background-color: #75BCCA;*/
     opacity: .4;
     position: absolute;
     transform: scaleX(0.4);
@@ -654,13 +667,13 @@ footer p {
     width: 33.333333333333333%;
     height: 170px;
     padding: 20px;
-    border: 1.8px solid #C2C2C2;
+    border: 1.8px solid #d3d3d3;
 
   }
 
   td:nth-child(2n) {
-    border-bottom: 1.8px solid #C2C2C2;;
-    border-top: 1.8px solid #C2C2C2;;
+    border-bottom: 1.8px solid #d3d3d3;;
+    border-top: 1.8px solid #d3d3d3;;
     border-left: none;
     border-right: none;
   }
@@ -671,7 +684,6 @@ footer p {
   *******************/
 
   .process {
-    background-color: #F1815B;
     width: 100%;
     padding: 4em 4em;
     color: #fff;
