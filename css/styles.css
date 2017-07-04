@@ -11,14 +11,6 @@
   Muli font weights:
   - Black = 900
 
-  Colours:
-  - Yellow = #FFDF65
-  - Light blue = #75BCCA
-  - Orange = #F1815B
-  - Light Green = #7ABBA7
-  - Off black = #333
-  - Light grey = #C2C2C2
-  - Lightest grey = #F7F7F7
 *******************/
 
 
@@ -52,8 +44,24 @@
 html {
   font-size: 14px;
   line-height: 23px;
-  color: #333;
+  color: var(--almost-black);
+  --white: #fff;
+  --off-white: #F7F7F7;
+  --lighter-grey: #d3d3d3;
+  --light-grey: #888888;
+  --almost-black: #333;
+  --light-blue: #75BCCA;
+  --dark-blue: #48536C;
+  --off-yellow: #eaffd0;
+  --lightest-green: #AED6CA;
+  --lighter-green: #95e1d3;
+  --light-green: #61B395;
+  --dark-green: #649281;
+  --red: #f56262;
+  --orange: #F7806A;
 }
+
+
 
 body {
   font-family: 'Fauna One', serif;
@@ -101,21 +109,21 @@ h5 {
 }
 
 .slate {
-  background: -webkit-linear-gradient(top left, #61B395, #649281);
-  background: linear-gradient(top left, #61B395, #649281);
+  background: linear-gradient(top left, var(--light-green), var(--dark-green));
+  background: -webkit-linear-gradient(top left, var(--light-green), var(--dark-green));
 }
 
 
 .blue {
-  background: -webkit-linear-gradient(top left, #75BCCA , #48536C);
-  background: linear-gradient(top left, #75BCCA , #48536C);
+  background: linear-gradient(top left, var(--light-blue) , var(--dark-blue));
+  background: -webkit-linear-gradient(top left, var(--light-blue) , var(--dark-blue));
 }
 
 
 
 .orange {
-  background: -webkit-linear-gradient(top left, #f56262 , #F7806A);
-  background: linear-gradient(top left, #f56262 , #F7806A);
+  background: linear-gradient(top left, var(--red), var(--orange));
+  background: -webkit-linear-gradient(top left, var(--red), var(--orange));
 }
 
 .heading {
@@ -141,7 +149,7 @@ h5 {
 *******************/
 
 header {
-  background-color: #F7F7F7;
+  background-color: var(--off-white);
   padding: 1em .75em 0 .75em;
 }
 
@@ -157,7 +165,7 @@ header {
 #hamburger {
   float: right;
   padding: .3em .2em 0 0;
-  color: #333;
+  color: var(--almost-black);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -176,12 +184,12 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
-  background: -webkit-linear-gradient(top left, #95e1d3 , #eaffd0);
-  background: linear-gradient(top left, #95e1d3 , #eaffd0);
+  background: linear-gradient(top left, var(--lighter-green) , var(--off-yellow));
+  background: -webkit-linear-gradient(top left, var(--lighter-green) , var(--off-yellow));
   overflow-x: hidden;
   padding-top: 80px;
   transition: 0.5s;
-  box-shadow: 2px 2px 2px #888888;
+  box-shadow: 2px 2px 2px var(--light-grey);
   transform: translateX(-100%);
 }
 
@@ -201,7 +209,7 @@ header {
 }
 
 nav ul li a {
-  color: #333;
+  color: var(--almost-black);
 }
 
 
@@ -216,7 +224,7 @@ nav ul li a {
   width: 100%;
   bottom: -12px;
   left: 0;
-  background-color: #fff;
+  background-color: var(--white);
   opacity: 0.4;
   position: absolute;
   transform: scaleX(0.4);
@@ -242,7 +250,7 @@ nav ul {
   margin-left: 50px;
   padding-top: 20px;
   text-decoration: none;
-  color: #333;
+  color: var(--almost-black);
   cursor: pointer;
 }
 
@@ -259,8 +267,8 @@ ins {
 ins:before {
   content: "";
   height: 2px;
-  background: -webkit-linear-gradient(top left, #75BCCA , #48536C);
-  background: linear-gradient(top left, #75BCCA , #48536C);
+  background: linear-gradient(top left, var(--light-blue) , var(--dark-blue));
+  background: -webkit-linear-gradient(top left, var(--light-blue) , var(--dark-blue));
   width: 100%;
   position: absolute;
   bottom: -2px;
@@ -268,8 +276,8 @@ ins:before {
 }
 
 .orange2::before {
-  background: -webkit-linear-gradient(top left, #f56262 , #F7806A);
-  background: linear-gradient(top left, #f56262 , #F7806A);
+  background: linear-gradient(top left, var(--red), var(--orange));
+  background: -webkit-linear-gradient(top left, var(--red), var(--orange));
 }
 
 .profile {
@@ -299,7 +307,7 @@ table {
 td {
   display: block;
   padding: 20px;
-  border: 1.2px solid #d3d3d3;
+  border: 1.2px solid var(--lighter-grey);
 }
 
 td:nth-child(2n) {
@@ -313,11 +321,11 @@ border-top: none;
 *******************/
 
 .process {
-  background: -webkit-linear-gradient(top left, #f56262 , #F7806A);
-  background: linear-gradient(top left, #f56262 , #F7806A);
+  background: linear-gradient(top left, var(--red), var(--orange));
+  background: -webkit-linear-gradient(top left, var(--red), var(--orange));
   width: 100%;
-  padding: 2em 1em;
-  color: #fff;
+  padding: 2em 2em;
+  color: var(--white);
 }
 
 
@@ -328,13 +336,13 @@ border-top: none;
 *******************/
 
 .contact {
-  background: -webkit-linear-gradient(top left, #61B395, #649281);
-  background: linear-gradient(top left, #61B395, #649281);
+  background: linear-gradient(top left, var(--light-green), var(--dark-green));
+  background: -webkit-linear-gradient(top left, var(--light-green), var(--dark-green));
   padding: 2em 1em;
 }
 
 .contact p {
-  color: #fff;
+  color: var(--white);
 }
 
 .bold {
@@ -342,14 +350,14 @@ border-top: none;
 }
 
 .contact a {
-  color: #fff;
+  color: var(--white);
 }
 
 .call {
   font-family: 'Muli', sans-serif;
   font-size: 2em;
   line-height: 1.2em;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   position: relative;
 }
@@ -359,7 +367,7 @@ border-top: none;
   height: 3px;
   width: 100%;
   bottom: -8px;
-  background-color: #639686;
+  background-color: var(--dark-green);
   opacity: .4;
   position: absolute;
   transform: scaleX(0.4);
@@ -386,7 +394,7 @@ border-top: none;
 
 .contact .fa-phone {
   display: block;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 0.1em;
 }
 
@@ -420,19 +428,20 @@ border-top: none;
   display: block;
 	width: 45px;
 	height: 45px;
-  border: 1.7px solid #AED6CA;
+  border: 1.7px solid var(--lightest-green);
   position: relative;
 }
 
 .icon {
   font-size: 20px;
-  color: #fff;
+  color: var(--white);
   position: absolute;
   margin: 12px;
 }
 
 .item:hover {
-  background-color: #639686;
+  background-color: var(--dark-green);
+  border: 1.7px solid var(--light-green);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -464,7 +473,7 @@ border-top: none;
 *******************/
 
 footer {
-  background-color: #F7F7F7;
+  background-color: var(--off-white);
   padding: .5em;
 }
 
@@ -526,6 +535,9 @@ footer p {
     font-size: 4.5em;
     line-height: 1.1em;
     margin: 0;
+    max-width: 982px;
+    margin: auto;
+    /*text-align: center;*/
   }
 
   /*******************
@@ -579,7 +591,7 @@ footer p {
 
   nav ul li a {
     display: block;
-    color: #333;
+    color: var(--alomst-black);
     font-size: 1.5em;
     font-weight: 400;
     margin: 0 1em;
@@ -609,9 +621,8 @@ footer p {
     width: 100%;
     bottom: -12px;
     left: 0;
-    background: -webkit-linear-gradient(top left, #75BCCA , #48536C);
-    background: linear-gradient(top left, #75BCCA , #48536C);
-    /*background-color: #75BCCA;*/
+    background: linear-gradient(top left, var(--light-blue) , var(--dark-blue));
+    background: -webkit-linear-gradient(top left, var(--light-blue) , var(--dark-blue));
     opacity: .4;
     position: absolute;
     transform: scaleX(0.4);
@@ -666,13 +677,12 @@ footer p {
     width: 33.333333333333333%;
     height: 170px;
     padding: 20px;
-    border: 1.8px solid #d3d3d3;
-
+    border: 1.8px solid var(--lighter-grey);
   }
 
   td:nth-child(2n) {
-    border-bottom: 1.8px solid #d3d3d3;;
-    border-top: 1.8px solid #d3d3d3;;
+    border-bottom: 1.8px solid var(--lighter-grey);
+    border-top: 1.8px solid var(--lighter-grey);
     border-left: none;
     border-right: none;
   }
@@ -684,8 +694,8 @@ footer p {
 
   .process {
     width: 100%;
-    padding: 4em 4em;
-    color: #fff;
+    padding: 4em 0em;
+    color: var(--white);
     margin-bottom: 55px;
   }
 
@@ -698,7 +708,8 @@ footer p {
   *******************/
 
   .contact {
-    background-color: #7ABBA7;
+    background: linear-gradient(top left, var(--light-green), var(--dark-green));
+    background: -webkit-linear-gradient(top left, var(--light-green), var(--dark-green));
     padding: 6em 2em;
     width: 50%;
     height: 500px;
@@ -738,17 +749,16 @@ footer p {
     display: block;
   	width: 45px;
   	height: 45px;
-    border: 1.7px solid #AED6CA;
   }
 
   .icon {
     font-size: 20px;
-    color: #fff;
+    color: var(--white);
     margin: 12px;
   }
 
   .item:hover {
-    background-color: #639686;
+    background-color: var(--dark-green);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
