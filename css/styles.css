@@ -170,6 +170,10 @@ header {
   cursor: pointer;
 }
 
+#hamburger:active {
+  color: var(--lighter-green);
+}
+
 .label {
   margin-top: 5px;
   padding-right: 7px;
