@@ -258,6 +258,13 @@ nav ul {
   cursor: pointer;
 }
 
+.closebtn:hover {
+  font-size: 0.88em;
+  color: var(--off-yellow);
+  transform: scaleX(1);
+  opacity: 1;
+}
+
 
 /*******************
   ABOUT PAGE
