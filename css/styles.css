@@ -92,7 +92,7 @@ h3 {
 
 h5 {
   font-family: 'Muli', sans-serif;
-  font-size: 3.357em;
+  font-size: 3em;
   line-height: 1.1em;
   margin: 0;
 }
@@ -160,11 +160,12 @@ header {
 .menuLabel {
   float: right;
   margin: 0;
+  padding-top: 2px;
 }
 
 #hamburger {
   float: right;
-  padding: .3em .2em 0 0;
+  padding: .3em 0 0 0;
   color: var(--almost-black);
   font-size: 1.5rem;
   cursor: pointer;
@@ -193,12 +194,13 @@ header {
   overflow-x: hidden;
   padding-top: 80px;
   transition: 0.5s;
-  box-shadow: 2px 2px 2px var(--light-grey);
   transform: translateX(-100%);
+
 }
 
 .sidenav.is-active {
   transform: translateX(0);
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .sidenav li {
@@ -396,6 +398,11 @@ border-top: none;
   margin-top: 2em;
 }
 
+.email {
+  text-decoration: none;
+  border-bottom: 1px solid var(--white)
+}
+
 .moreinfo p {
   margin: 0.1em 0;
 }
@@ -499,7 +506,6 @@ footer p {
 
 .declaration {
   margin: 1em 0 0 0;
-  font-size: 15px;
 }
 
 .smallprint {
@@ -514,7 +520,7 @@ footer p {
 
 
 img {
-  width: 91px;
+  width: 92px;
 }
 
 
