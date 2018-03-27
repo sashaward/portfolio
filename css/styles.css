@@ -153,6 +153,10 @@ header {
   padding: 1em .75em 0 .75em;
 }
 
+.logo img {
+  width: 105px;
+}
+
 .logo {
   float: left;
 }
@@ -244,7 +248,6 @@ nav ul li a {
   opacity: 1;
 }
 
-
 nav ul {
   padding-left: 0;
 }
@@ -303,6 +306,15 @@ ins:before {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.2em;
+  width: 92px;
+  transition: filter .4s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.profile:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .skills {
@@ -519,17 +531,7 @@ footer p {
 *******************/
 
 
-img {
-  width: 92px;
-  transition: filter .4s ease-in-out;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
 
-img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
 
 /*******************
   RESPONSIVE STYLES
