@@ -51,7 +51,7 @@ html {
   --light-grey: #888888;
   --almost-black: #333;
   --light-blue: #75BCCA;
-  --dark-blue: #48536C;
+  --dark-blue: #08778C;
   --off-yellow: #eaffd0;
   --lightest-green: #AED6CA;
   --lighter-green: #95e1d3;
@@ -483,10 +483,6 @@ border-top: none;
 
 .address {
   padding: 2em 1em 0em 1em ;
-}
-
-.find {
-  padding: 2em;
 }
 
 #map {
