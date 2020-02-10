@@ -143,6 +143,7 @@ header {
 
 .logo {
   float: left;
+  padding-top: 5px;
 }
 
 .menuLabel {
@@ -153,7 +154,6 @@ header {
 
 #hamburger {
   float: right;
-  padding: .3em 0 0 0;
   color: var(--almost-black);
   font-size: 1.5rem;
   cursor: pointer;
@@ -164,7 +164,8 @@ header {
 }
 
 .label {
-  margin-top: 5px;
+  margin: 0;
+  padding-top: 3px;
   padding-right: 7px;
   display: inline-block;
   font-size: 0.857em;
