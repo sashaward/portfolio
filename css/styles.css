@@ -323,146 +323,6 @@ td p {
 }
 
 
-
-
-/*******************
-  CONTACT PAGE
-*******************/
-
-.contact {
-  background: linear-gradient(top left, var(--light-blue) , var(--dark-blue));
-  background: -webkit-linear-gradient(top left, var(--light-blue) , var(--dark-blue));
-  padding: 2em 1em;
-}
-
-.contact p {
-  color: var(--white);
-}
-
-.bold {
-  font-weight: 900;
-}
-
-.contact a {
-  color: var(--white);
-}
-
-.call {
-  font-family: 'Muli', sans-serif;
-  font-size: 2em;
-  line-height: 1.2em;
-  color: var(--white);
-  text-decoration: none;
-  position: relative;
-}
-
-.call:before {
-  content: "";
-  height: 3px;
-  width: 100%;
-  bottom: -8px;
-  background-color: var(--dark-blue);
-  opacity: .4;
-  position: absolute;
-  transform: scaleX(0.4);
-  transform-origin: 0 0;
-  transition: transform 0.3s;
-}
-
-.call:hover:before {
-  transform: scaleX(1);
-  opacity: 1;
-}
-
-.moreinfo {
-  margin-top: 2em;
-}
-
-.email {
-  text-decoration: none;
-  border-bottom: 1px solid var(--white)
-}
-
-.moreinfo p {
-  margin: 0.1em 0;
-}
-
-.moreinfo p:first-child {
-  margin-bottom: 1.5em;
-}
-
-.contact .fa-phone {
-  display: block;
-  color: var(--white);
-  margin-bottom: 0.1em;
-}
-
-.socialProfiles {
-  padding-left: 0px;
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-
-.socialProfiles ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.socialProfiles li {
-  list-style-type: none;
-  float: left;
-  margin: .5em .5em;
-}
-
-.socialProfiles li:first-child {
-  margin-left: 0px;
-}
-
-.socialProfiles li:last-child {
-  margin-right: 0px;
-}
-
-.item {
-  border-radius: 50%;
-  display: block;
-	width: 45px;
-	height: 45px;
-  border: 1.7px solid var(--light-blue);
-  position: relative;
-}
-
-.icon {
-  font-size: 20px;
-  color: var(--white);
-  position: absolute;
-  margin: 12px;
-}
-
-.item:hover {
-  background-color: var(--dark-blue);
-  border: 1.7px solid var(--light-blue);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.address p {
-  margin: 0.1em 0;
-}
-
-.address {
-  padding: 2em 1em 0em 1em ;
-}
-
-#map {
-  height: 320px;
-  width: 100%;
-}
-
-.openmaps {
-  margin: 1em 1em 3em 1em;
-}
-
-
 /*******************
   FOOTER
 *******************/
@@ -470,6 +330,7 @@ td p {
 footer {
   background-color: var(--off-white);
   padding: .5em;
+  width: 100%;
 }
 
 footer a {
@@ -478,6 +339,11 @@ footer a {
 
 footer p {
   text-align: center;
+}
+
+.soon {
+  position: fixed;
+  bottom: 0;
 }
 
 .declaration {
