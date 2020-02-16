@@ -92,7 +92,7 @@ h3 {
 
 h5 {
   font-family: 'Muli', sans-serif;
-  font-size: 3em;
+  font-size: 2.286em;
   line-height: 1.1em;
   margin: 0;
 }
@@ -149,13 +149,14 @@ header {
 .menuLabel {
   float: right;
   margin: 0;
-  padding-top: 2px;
+  padding-top: 0px;
 }
 
 #hamburger {
   float: right;
+  margin-top: 3px;
+  width: 22px;
   color: var(--almost-black);
-  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -163,12 +164,7 @@ header {
   color: var(--lighter-green);
 }
 
-.label {
-  margin: 0;
-  padding-right: 7px;
-  display: inline-block;
-  font-size: 0.857em;
-}
+
 
 .sidenav {
   height: 100%;
@@ -400,7 +396,7 @@ footer p {
   }
 
   h5 {
-    font-size: 4.5em;
+    font-size: 3em;
     line-height: 1.1em;
     margin-bottom: 20px;
     /*text-align: center;*/
@@ -427,10 +423,6 @@ footer p {
   *******************/
 
   #hamburger {
-    display: none;
-  }
-
-  .label {
     display: none;
   }
 
@@ -488,7 +480,7 @@ footer p {
   }
 
   .sidenav a:hover {
-    color: var(--light-blue);
+    color: var(--orange);
     transition: color ease-in;
   }
 
@@ -539,6 +531,11 @@ footer p {
     border-top: 1.2px solid var(--lighter-grey);
     border-left: none;
     border-right: none;
+  }
+
+  .fixed {
+    max-width: 1004px;
+    margin: auto;
   }
 
 
