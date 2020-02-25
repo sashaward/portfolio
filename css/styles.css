@@ -82,19 +82,35 @@ h2 {
   font-weight: 900;
   font-size: 1.6em;
   line-height: 1.4em;
+  margin-top: 24px;
 }
 
 h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.2em;
+}
+
+h4 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 0.938em;
+  margin-bottom: 0;
 }
 
 h5 {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 2.286em;
   line-height: 1.1em;
   margin: 0;
+}
+
+h6 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875em;
+  font-weight: 200;
+  line-height: 1.1em;
+  margin-top: 5px;
 }
 
 
@@ -318,6 +334,22 @@ td p {
   margin-top: 40px;
 }
 
+.card {
+  margin-top: 60px;
+}
+
+.work-asset {
+  width: 100%;
+  height: auto;
+}
+
+.line {
+  width: 60px;
+  background-color: var(--lighter-grey);
+  height: 1px;
+  display: block;
+}
+
 
 /*******************
   FOOTER
@@ -335,11 +367,6 @@ footer a {
 
 footer p {
   text-align: center;
-}
-
-.soon {
-  position: fixed;
-  bottom: 0;
 }
 
 .declaration {
