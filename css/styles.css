@@ -338,6 +338,11 @@ td p {
   margin-top: 60px;
 }
 
+.card:last-child {
+  margin-bottom: 100px;
+}
+
+
 .work-asset {
   width: 100%;
   height: auto;
