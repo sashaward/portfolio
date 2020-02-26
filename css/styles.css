@@ -1,22 +1,17 @@
 /*******************
   DESIGN INFO
 
-  Fauna One font weights:
-
-  Playfair Display font weights:
-  - Regular = 400
-  - Bold = 700
-  - Black = 900
-
   Muli font weights:
   - Black = 900
 
+  Nunito Sans weights:
+  - light 300
+  - regular 400
+  - bold 700
+  - extra bold 900
+
+
 *******************/
-
-
-/*Design notes:*/
-/*need to change the colour of the white backgroud to an off white*/
-/*make footer white*/
 
 
 /*******************
@@ -45,10 +40,11 @@ html {
   font-size: 14px;
   line-height: 23px;
   color: var(--almost-black);
+  background-color: var(--lightest-grey);
   --white: #fff;
-  --off-white: #F7F7F7;
+  --lightest-grey: #FAFAFA;
   --lighter-grey: #d3d3d3;
-  --light-grey: #888888;
+  --light-grey: #757575;
   --almost-black: #333;
   --light-blue: #75BCCA;
   --dark-blue: #08778C;
@@ -79,27 +75,28 @@ h1 {
 
 h2 {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 1.6em;
   line-height: 1.4em;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 
 h3 {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.2em;
 }
 
 h4 {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 0.938em;
   margin-bottom: 0;
 }
 
 h5 {
   font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
   font-size: 2.286em;
   line-height: 1.1em;
   margin: 0;
@@ -108,9 +105,10 @@ h5 {
 h6 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 0.875em;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.1em;
   margin-top: 5px;
+  color: var(--light-grey);
 }
 
 
@@ -143,6 +141,10 @@ h6 {
 .margin2 {
   margin-top: 2px;
   margin-bottom: 50px;
+}
+
+span {
+  background-color: #F8BEB3;
 }
 
 /*******************
@@ -361,17 +363,15 @@ td p {
 *******************/
 
 footer {
-  background-color: var(--off-white);
   padding: .5em;
   width: 100%;
 }
 
-footer a {
-  font-size: 10px;
-}
-
 footer p {
   text-align: center;
+  font-size: 12px;
+  color: var(--light-grey);
+  font-weight: 300;
 }
 
 .declaration {
@@ -382,7 +382,7 @@ footer p {
   font-size: 9px;
   color: var(--light-grey); 
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 /*******************
@@ -420,6 +420,7 @@ footer p {
   h2 {
     font-size: 2em;
     line-height: 1.3em;
+    margin-top: 0;
   }
 
   h3 {
@@ -447,7 +448,6 @@ footer p {
 
   .centreContainer {
     margin: 100px 50px 0;
-    text-align: center;
   }
 
   /*******************
@@ -570,11 +570,6 @@ footer p {
     margin: auto;
   }
 
-
-  /*******************
-    WORK PAGE
-  *******************/
-
   .process {
     width: 100%;
     padding: 4em 6em;
@@ -589,6 +584,28 @@ footer p {
     margin: auto;
     margin-bottom: 100px;
   }
+
+ /*******************
+    WORK PAGE
+  *******************/
+
+  .title {
+    text-align: center;
+    margin-bottom: 110px;
+  }
+
+
+  .work-asset {
+    float: right;
+    width: 50%;
+    max-width: 652px;
+    max-height: 440px;
+    margin-left: 50px;
+  }
+
+  .card {
+    display: flow-root;
+  } 
 
   /*******************
     CONTACT PAGE
@@ -664,6 +681,7 @@ footer p {
   }
 }
 
+
 @media screen and (min-width: 1024px) {
 
   img {
@@ -677,7 +695,8 @@ footer p {
   }
 
   .centreContainer {
-    margin: 100px 50px 0;
+    margin: 100px auto 0;
+    max-width: 999px;
   }
 
   table {
