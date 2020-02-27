@@ -92,6 +92,7 @@
     font-weight: 800;
     font-size: 0.938em;
     margin-bottom: 0;
+    margin-top: 24px;
   }
 
   h5 {
@@ -107,7 +108,7 @@
     font-size: 0.875em;
     font-weight: 300;
     line-height: 1.1em;
-    margin-top: 5px;
+    margin-top: 2px;
     color: var(--light-grey);
   }
 
@@ -115,15 +116,6 @@
   /*******************
     GENERAL SETUP
   *******************/
-
-  .linebreak {
-    height: 2px;
-    width: 80px;
-    padding: 0;
-    margin: 0 0 40px;
-    background: linear-gradient(top left, var(--light-blue) , var(--dark-blue));
-    background: -webkit-linear-gradient(top left, var(--light-blue) , var(--dark-blue));
-  }
 
   .heading {
     padding: 0 3em;
@@ -170,8 +162,11 @@
     float: right;
     margin-top: 3px;
     width: 22px;
-    color: var(--almost-black);
     cursor: pointer;
+  }
+
+  .bars {
+    color: var(--orange);
   }
 
   #hamburger:active {
@@ -185,13 +180,11 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(top left, var(--lighter-green) , var(--off-yellow));
-    background: -webkit-linear-gradient(top left, var(--lighter-green) , var(--off-yellow));
+    background: var(--white);
     overflow-x: hidden;
     padding-top: 80px;
     transition: 0.5s;
     transform: translateX(-100%);
-
   }
 
   .sidenav.is-active {
@@ -234,20 +227,12 @@
     top: 0;
     right: 25px;
     font-size: 0.857em;
-    margin-left: 50px;
-    padding-top: 20px;
+    margin-right: 16px;
+    padding-top: 30px;
     text-decoration: none;
     color: var(--almost-black);
     cursor: pointer;
   }
-
-  .closebtn:hover {
-    font-size: 0.88em;
-    color: var(--off-yellow);
-    transform: scaleX(1);
-    opacity: 1;
-  }
-
 
   /*******************
     ABOUT PAGE
@@ -324,7 +309,6 @@
     text-decoration: none;
     color: var(--almost-black);
     position: relative;
-    z-index: 1;
     display: inline-flex;
     padding-left: 2px;
     padding-bottom: 5px;
@@ -336,12 +320,10 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to top, var(--lightest-green) 25%, rgba(0, 0, 0, 0) 40%);
-    
     position: absolute;
     left: 0;
     bottom: 2px;
     z-index: -1;
-    
     will-change: width;
     transform: rotate(-2deg);
     transform-origin: left bottom
@@ -350,10 +332,6 @@
   .link:hover::before{
     width: 0;
   }
-
-  /*
-  * animation styles
-  */
 
   .link::before{
     transition: width .1s ease-out;
