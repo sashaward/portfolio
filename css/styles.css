@@ -165,14 +165,6 @@
     cursor: pointer;
   }
 
-  .bars {
-    color: var(--orange);
-  }
-
-  #hamburger:active {
-    color: var(--lighter-green);
-  }
-
   .sidenav {
     height: 100%;
     width: 100%;
@@ -204,9 +196,10 @@
   }
 
   nav ul li a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     color: var(--almost-black);
   }
-
 
   .sidenav a {
     text-decoration: none;
@@ -223,6 +216,8 @@
   }
 
   .sidenav .closebtn {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     position: absolute;
     top: 0;
     right: 25px;
@@ -340,6 +335,10 @@
   .link:hover::before{
     transition-duration: .15s;
   } 
+
+  .link:active{
+    color: var(--dark-green);
+  }
     
 
 
@@ -561,6 +560,7 @@
       max-width: 250px;
       margin-left: auto;
       margin-right: 0px;
+      padding-top: 0px;
     }
 
     table {
