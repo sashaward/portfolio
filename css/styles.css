@@ -528,7 +528,7 @@
     }
 
     .sidenav a:hover {
-      color: var(--orange);
+      color: var(--lighter-grey);
       transition: color ease-in;
     }
 
