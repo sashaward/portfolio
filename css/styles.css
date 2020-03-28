@@ -48,13 +48,9 @@
     --almost-black: #333;
     --light-blue: #75BCCA;
     --dark-blue: #08778C;
-    --off-yellow: #eaffd0;
+    --yellow: #FAA916;
     --lightest-green: #AED6CA;
-    --lighter-green: #95e1d3;
-    --light-green: #61B395;
-    --dark-green: #649281;
-    --red: #f56262;
-    --orange: #F7806A;
+    --dark-green: #134E13;
   }
 
 
@@ -112,6 +108,9 @@
     color: var(--light-grey);
   }
 
+  p {
+    color: var(--light-grey);
+  }
 
   /*******************
     GENERAL SETUP
@@ -144,12 +143,11 @@
   }
 
   .logo img {
-    width: 105px;
+    width: 135px;
   }
 
   .logo {
     float: left;
-    padding-top: 5px;
   }
 
   .menuLabel {
@@ -295,6 +293,9 @@
     color: #a8a8a8;
   }
 
+  .white {
+    color: var(--white);
+  }
 
 
   /*******************
@@ -302,7 +303,7 @@
   *******************/
   .link{
     text-decoration: none;
-    color: var(--almost-black);
+    color: var(--light-grey);
     position: relative;
     display: inline-flex;
     padding-left: 2px;
@@ -314,7 +315,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, var(--lightest-green) 25%, rgba(0, 0, 0, 0) 40%);
+    background-image: linear-gradient(to top, var(--yellow) 25%, rgba(0, 0, 0, 0) 40%);
     position: absolute;
     left: 0;
     bottom: 2px;
@@ -343,8 +344,7 @@
 
 
   .process {
-    background: linear-gradient(top left, var(--red), var(--orange));
-    background: -webkit-linear-gradient(top left, var(--red), var(--orange));
+    background-color: var(--dark-green);
     width: 100%;
     padding: 2em 2em;
     color: var(--white);
@@ -419,7 +419,7 @@
     *******************/
 
     html {
-      font-size: 15px;
+      font-size: 16px;
       line-height: 24px;
     }
 
@@ -597,7 +597,7 @@
     .expertise {
       text-align: left;
       min-width: 500px;
-      max-width: 45%;
+      max-width: 75%;
       margin: auto;
       margin-bottom: 100px;
     }
