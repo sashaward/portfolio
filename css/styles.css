@@ -37,8 +37,8 @@
   *******************/
 
   html {
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 24px;
     color: var(--almost-black);
     background-color: var(--lightest-grey);
     --white: #fff;
@@ -50,14 +50,11 @@
     --dark-blue: #08778C;
     --yellow: #FAA916;
     --lightest-green: #AED6CA;
-    --dark-green: #134E13;
+    --dark-green: #0b2c0b;
   }
 
-
-
   body {
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: .3px;
+    font-family: 'Nunito Sans', sans-serif;
   }
 
   h1 {
@@ -95,7 +92,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 900;
     font-size: 2.286em;
-    line-height: 1.1em;
+    line-height: 1.17em;
     margin: 0;
   }
 
@@ -110,6 +107,9 @@
 
   p {
     color: var(--light-grey);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
   }
 
   /*******************
@@ -130,8 +130,8 @@
   }
 
   .margin2 {
-    margin-top: 2px;
-    margin-bottom: 50px;
+    margin-top: 8px;
+    margin-bottom: 64px;
   }
 
   /*******************
@@ -289,14 +289,14 @@
   border-top: none;
   }
 
-  td p {
-    color: #a8a8a8;
-  }
-
   .white {
     color: var(--white);
   }
 
+  .black {
+    color: var(--almost-black);
+    font-weight: 800;
+  }
 
   /*******************
     WORK PAGE
@@ -314,7 +314,7 @@
   .link::before{
     content: "";
     width: 100%;
-    height: 100%;
+    height: 55%;
     background-image: linear-gradient(to top, var(--yellow) 25%, rgba(0, 0, 0, 0) 40%);
     position: absolute;
     left: 0;
@@ -391,7 +391,7 @@
 
   footer p {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     color: var(--light-grey);
     font-weight: 300;
   }
@@ -401,7 +401,7 @@
   }
 
   .smallprint {
-    font-size: 9px;
+    font-size: 12px;
     color: var(--light-grey); 
     margin-top: 0;
     margin-bottom: 16px;;
@@ -446,9 +446,8 @@
 
     h5 {
       font-size: 3em;
-      line-height: 1.1em;
+      line-height: 1.2em;
       margin-bottom: 20px;
-      /*text-align: center;*/
     }
 
     /*******************
@@ -528,7 +527,7 @@
     }
 
     .sidenav a:hover {
-      color: var(--lighter-grey);
+      color: var(--light-grey);
       transition: color ease-in;
     }
 
@@ -572,7 +571,6 @@
       width: 33.333333333333333%;
       height: 170px;
       padding: 20px;
-      /* border: 1.8px solid var(--lighter-grey); */
     }
 
     td:nth-child(2n) {
