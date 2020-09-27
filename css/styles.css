@@ -311,6 +311,10 @@
     padding-right: 2px;
     }
 
+  .ovo {
+    color: var(--almost-black);
+  }
+
   .link::before{
     content: "";
     width: 100%;
