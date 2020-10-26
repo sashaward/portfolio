@@ -86,6 +86,7 @@
     font-size: 0.938em;
     margin-bottom: 0;
     margin-top: 24px;
+    color: var(--light-grey);
   }
 
   h5 {
@@ -345,8 +346,6 @@
     color: var(--dark-green);
   }
     
-
-
   .process {
     background-color: var(--dark-green);
     width: 100%;
