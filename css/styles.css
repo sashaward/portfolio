@@ -1,16 +1,9 @@
   /*******************
     DESIGN INFO
-
-    Muli font weights:
-    - Black = 900
-
-    Nunito Sans weights:
-    - light 300
-    - regular 400
-    - bold 700
-    - extra bold 900
-
-
+      Raleway
+      - Light 300
+      - Semi-bold 600
+      - Extra-bold 800
   *******************/
 
 
@@ -58,7 +51,7 @@
   }
 
   h1 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 2.286em;
     line-height: 1.2em;
@@ -67,7 +60,7 @@
   }
 
   h2 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 1.6em;
     line-height: 1.4em;
@@ -75,13 +68,13 @@
   }
 
   h3 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 1.2em;
   }
 
   h4 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 0.938em;
     margin-bottom: 0;
@@ -89,7 +82,7 @@
   }
 
   h5 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 2.286em;
     line-height: 1.17em;
@@ -97,7 +90,7 @@
   }
 
   h6 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.875em;
     font-weight: 300;
     line-height: 1.1em;
