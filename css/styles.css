@@ -248,14 +248,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 160px;
-    transition: filter .4s ease-in-out;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-
-  .profile:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
   }
 
   .skills {
@@ -307,7 +299,7 @@
     padding-right: 2px;
     }
 
-  .ovo {
+  .deliveroo {
     color: var(--almost-black);
   }
 
